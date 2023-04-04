@@ -1,71 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style>
-		body {
-	display:block;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: #36454F;
-  /* text-shadow: 2px 1px 1px rgba(255, 255, 255, 0.964); */
-  font-size: 20px; /* marimea fontului pentru body */
-  background-image: url("https://drive.google.com/uc?export=view&id=1wJ0zeXVu48a_1p60V2MDBdZtyNzY6AoE");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  opacity: 1;
-}
-
-@media only screen and (orientation: landscape) {
-  body {
-	margin: 0;
-	padding: 0;
-	color:#36454F;
-    background-image: url("https://drive.google.com/uc?export=view&id=1b9YjjsZD3m3joqN_kgoJ8zsAoAfNTKng");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    opacity: 1;
-  }
-}
-		.header {
-			padding: 30px;
-		}
-		h1 {
-			margin-top: 0;
-			font-family: Montserrat, sans-serif;
-			font-size: 45px;
-		}
-		.container {
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 30px;
-			
-			font-size: 30px; /* marimea fontului pentru container */
-			font-family: Montserrat, sans-serif;
-			color: #d2b48c;
-		}
-		select {
-			margin-top:100px;
-			font-size: 30px; /* marimea fontului pentru dropdown */
-			font-family: Montserrat, sans-serif;
-			background-color: rgba(255, 255, 255, 0.6);
-			color: #36454F;
-			border-color:rgba(255, 255, 255, 0)
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="index.js"></script> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="header">
-		<img src="https://drive.google.com/uc?export=view&id=16xKFESdgPjhgh-AC5FH-LxjdktHynVL2" alt="Logo Filadelfia">
+		<img src="resources/filadelfia-logo.png" alt="Logo Filadelfia">
 		
 		<h1>Orchestra Bisericii Filadelfia</h1>
 	</div>
 	<div class="container">
-            <select onchange="if (this.value == 'pian') window.location.href='https://drive.google.com/drive/folders/1TuSe2R-kE9vE9x9rAOQjiLLbWeOqRmzA?usp=share_link'; else if (this.value == 'chitara') window.location.href='https://drive.google.com/drive/folders/1xFVF2NrSonOos9ZPvSBYbxzGEli1E6H6?usp=share_link'; else if (this.value == 'vioara1') window.location.href='https://drive.google.com/drive/folders/1Uvll-gF8wdfZd5p71qQWu4zOMe-DOlg9?usp=share_link'; else if (this.value == 'vioara2') window.location.href='https://github.com/dCerQx/orchestra-filadelfia.gihub.io/Rapoarte/'; else if (this.value == 'vioara3') window.location.href='https://drive.google.com/drive/folders/vioara3_folder_id'; else if (this.value == 'mandolina') window.location.href='https://drive.google.com/drive/folders/1KNUQ6O_OLzyQwHbZ7sDKybYv0jgr1CXw?usp=share_link'; else if (this.value == 'violoncel') window.location.href='https://drive.google.com/drive/folders/1hFIwG3G3_qnb0QN0CXx4e7ktO_h51DRn?usp=share_link';">
-            <option value="">Selectati instrumentul</option>
+		<label for="selectInstrument">Selectati instrumentul: </label>
+        <select id="selectInstrument" autocomplete="off">
+			<option value=""></option>
 			<option value="pian">Pian</option>
 			<option value="chitara">Chitara</option>
 			<option value="vioara1">Vioara 1</option>
