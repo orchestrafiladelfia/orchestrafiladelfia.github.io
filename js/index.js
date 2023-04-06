@@ -2,6 +2,15 @@ $(document).ready(() => {
     $("#selectInstrumentDiv").hide();
     $("#wrongPassword").hide();
 
+    let input = document.getElementById("password");
+    input.addEventListener("keypress", (event) => {
+        if (event.key === "Enter") {
+          // Cancel the default action, if needed
+          event.preventDefault();
+          $("#submitButton").click();
+        }
+    });
+
     let hrefObject = {
         "Media": "https://drive.google.com/drive/u/3/folders/1eMNKkdSkBSvXaZdVXcPy_48Z_V7KFoqf",
         "pian": "https://drive.google.com/drive/folders/1TuSe2R-kE9vE9x9rAOQjiLLbWeOqRmzA?usp=share_link",
@@ -44,6 +53,11 @@ $(document).ready(() => {
       }
 
     })
+
+    $('#selectDepartment').on('change', function() {
+        $("#wrongPassword").hide();
+        $("#password").val("");
+    });
 
     $('#submitButton').click(() => {
         const password = $('#password').val();
