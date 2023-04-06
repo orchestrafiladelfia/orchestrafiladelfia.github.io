@@ -1,4 +1,4 @@
-const myModule = (function() {
+const loginModule = (function() {
 
     // Private variables and functions
     let department = {
@@ -29,26 +29,24 @@ const myModule = (function() {
 
     //public functions
 
-    function publicCheckPassword(password, deparmentOption) {
+    function publicCheckPassword(password, deparmentOption, targetHref) {
         const hashPass = Promise.resolve(generateHash(password));
         hashPass.then(value => {
             if(department[deparmentOption] === value) {
-                window.location.href = 'index.html'
+                if (deparmentOption === "Orchestra") {
+                    $("#selectDepartmentDiv").hide();
+                    $("#selectInstrumentDiv").show();
+                } else {
+                    window.location.href = targetHref;
+                }
+            } else {
+                $("#wrongPassword").show();
             }
         });
     }
 
-    
-    function publicGeneratePasswords() {
-        const orchestraPass = Promise.resolve(generateHash(department.orchestra));
-        const mediaPass = Promise.resolve(generateHash(department.media));
-        const compozitiePass = Promise.resolve(generateHash(department.compozitie));
-        //Promise.all([orchestraPass, mediaPass, compozitiePass]).then(values => console.log(values));
-    }
-
     // Expose public variables and functions
     return {
-        generatePasswords: publicGeneratePasswords,
         checkPassword: publicCheckPassword
     };
 

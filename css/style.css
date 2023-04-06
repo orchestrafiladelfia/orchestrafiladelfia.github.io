@@ -5,7 +5,7 @@ body {
     text-align: center;
     color: #36454F;
     font-size: 20px;
-    background-image: url("resources/background-image.jpg");
+    background-image: url("../resources/background-image.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@ body {
         margin: 0;
         padding: 0;
         color:#36454F;
-        background-image: url("resources/background-image-landscape.jpg");
+        background-image: url("../resources/background-image-landscape.jpg");
         background-size: cover;
         background-position: top;
         background-repeat: no-repeat;
@@ -35,21 +35,21 @@ h1 {
     font-size: 45px;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 30px;
-    font-size: 30px;
-    font-family: Montserrat, sans-serif;
-    color: black;
-    display: block;
-    margin-bottom: 10px;
+
+.selectDivs {
+    width: 40%;
+    margin: auto;
 }
 
-select {
-    font-size: 30px;
-    font-family: Montserrat, sans-serif;
-    background-color: rgba(255, 255, 255, 0.6);
-    color: #36454F;
-    border-color: black;
+#wrongPassword {
+    margin-top: 10px;
+    height: 20px;
+    display: flex; /* Enable flexbox layout */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
 }
+
+#wrongPassword p {
+    margin: 0;
+}
+  
