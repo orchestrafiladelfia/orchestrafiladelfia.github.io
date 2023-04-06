@@ -45,6 +45,11 @@ $(document).ready(() => {
 
     })
 
+    $('#selectDepartment').on('change', function() {
+        $("#wrongPassword").hide();
+        $("#password").val("");
+    });
+
     $('#submitButton').click(() => {
         const password = $('#password').val();
         let selectedValue = $('#selectDepartment').val();
