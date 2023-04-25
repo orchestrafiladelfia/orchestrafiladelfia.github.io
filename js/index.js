@@ -12,46 +12,26 @@ $(document).ready(() => {
     });
 
     let hrefObject = {
-        "Media": "https://drive.google.com/drive/u/3/folders/1eMNKkdSkBSvXaZdVXcPy_48Z_V7KFoqf",
-        "pian": "https://drive.google.com/drive/folders/1TuSe2R-kE9vE9x9rAOQjiLLbWeOqRmzA?usp=share_link",
-        "Compozitie": "https://drive.google.com/drive/folders/13c76J7bKIjrlapRr8vvLgc2Ft9AtX3NZ?usp=sharing",
-        "violoncel": "https://drive.google.com/drive/folders/1hFIwG3G3_qnb0QN0CXx4e7ktO_h51DRn?usp=sharing",
-        "mandolina": "https://drive.google.com/drive/folders/1KNUQ6O_OLzyQwHbZ7sDKybYv0jgr1CXw?usp=share_link",
-        "vioara1": "https://drive.google.com/drive/folders/1tZ5Q2Se85n15cBtJlDqpKbtfdMvse7Nd?usp=sharing",
-        "vioara2": "https://drive.google.com/drive/folders/1dBFXUw7qJIxP8FEChXoqu5WEgTb9bD-J?usp=sharing",
-        "vioara3": "https://drive.google.com/drive/folders/1_n_UnbRJorNuSBAatRyQ6Bs9BQJP5Zow?usp=sharing",
-        "chitara": "https://drive.google.com/drive/folders/1xFVF2NrSonOos9ZPvSBYbxzGEli1E6H6?usp=share_link"
+        "Media": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRBASYpyanVtcEFzSGlnaEFzWW91Q2FuwEKSwVqS2BLKfEKEDD1G5CeV4Bq9BS0yLg3KrU3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
+        "Compozitie": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRYSoSeEanVtcEFzSGlnaEFzWW91Q2FuPS2OQXBudgLKbZsN4isERE2RdWsV5VCWDR05fU3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
+        "pian": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRAOHYYGanVtcEFzSGlnaEFzWW91Q2FuGjIAYf2RbjJqcg0D1jByqEJ0egCSHjMWWEAOAU3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
+        "chitara": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRCmLApDanVtcEFzSGlnaEFzWW91Q2FudYsOYg25Ug3R5BqG2Z0OEDsm6W0AxfYKKSpl2U3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
+        "bass": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRCqYSIAanVtcEFzSGlnaEFzWW91Q2FuSh2EKYqW2DA9SWoEEYeGcEZ5TYLunZ2cuSp5QU3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
+        "acorduri": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRAW1Z2ZanVtcEFzSGlnaEFzWW91Q2FudZn1wWYq2WYq4TCOGY1KvfZcRDqiqY3KXgCuGU3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
+        "vioara1": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRCWfSAJanVtcEFzSGlnaEFzWW91Q2FudZ2Z4SB4cSBSHiJuxWMKbX2O0ErWSisSqS05pU3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
+        "vioara2": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRBWHWqmanVtcEFzSGlnaEFzWW91Q2FuAieicXpq4ZImLWZStBL9ciYACWBiZDoqnWH1PU3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
+        "vioara3": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRB56XrSanVtcEFzSGlnaEFzWW91Q2FubfsmkhruHAZAIC0WfYIAxW3i2ZAimipyqRepeU3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
+        "flaut": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRAtdZ3OanVtcEFzSGlnaEFzWW91Q2FumgBKLBIAXBJqySpATTZS2Wem4Y3ici1KzELJ2U3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
+        "mandolina1": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRZyTAAJanVtcEFzSGlnaEFzWW91Q2Fu2Y19UYMu5ZCiNDqt3h0WQjBOEioGvE3NcV1m3U3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
+        "mandolina2": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRBt5D09anVtcEFzSGlnaEFzWW91Q2FuBBMExiCSIEJ05VeiJAKuRVASGgKKERpSMjMAsU3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
+        "viola": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRA9zC1AanVtcEFzSGlnaEFzWW91Q2FuzDqOPg3OTiASHVBK0ZsqWSpOeTZOWXqF1Br93U3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
+        "saxofon": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRYECgBNanVtcEFzSGlnaEFzWW91Q2FudYKtefeVdjAusBB5CQZmmY29PYZReRMWwEIiYU3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
+        "violoncel": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRBmLXCianVtcEFzSGlnaEFzWW91Q2FuMR0heC3KzDoGWYoGIBMl0EYiwiJ9kfIZcWKOzU3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu"))
     }
 
     $('#selectInstrument').on('change', function() {
       var selectedValue = $(this).val();
-      
-      switch (selectedValue) {
-        case 'pian':
-            window.location.href = hrefObject[selectedValue];
-            break;
-        case 'chitara':
-            window.location.href = hrefObject[selectedValue];; 
-            break;
-        case 'vioara1':
-            window.location.href = hrefObject[selectedValue];; 
-            break;
-        case 'vioara2':
-            window.location.href = hrefObject[selectedValue];;
-            break;
-        case 'vioara3':
-            window.location.href = hrefObject[selectedValue];;
-            break;
-        case 'mandolina':
-            window.location.href = hrefObject[selectedValue];
-            break;
-        case 'violoncel':
-            window.location.href = hrefObject[selectedValue];
-            break;            
-        default:
-          console.log('Unknown option selected');
-      }
-
+      window.location.href = hrefObject[selectedValue];
     })
 
     $('#selectDepartment').on('change', function() {

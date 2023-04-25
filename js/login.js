@@ -2,9 +2,9 @@ const loginModule = (function() {
 
     // Private variables and functions
     let department = {
-        "Orchestra": "c1f9b6f4bab91e1e191b6f9fb998b59e7bb993c2e4bf7c39c745511fb505b886",
-        "Media": "6f501c825bc65017eb03b486beb156328f45d4f158a536cab80fd2e9fd6ab4ee",
-        "Compozitie": "503d722782fde7ed407dde933d08085cc71b8a583bb6ef3ca9d72fd2db27359c"
+        "Orchestra": "60dbe37afa564de00b2086c0340a33f5cf81628693f241940bab49a4200d6d39",
+        "Media": "6f90017ddb0f24ecf657cccf5477695fa8ae47390281e963f1a7d78683c571a3",
+        "Compozitie": "28804b60bfe4934a50eaea8b2e961c02e1f3eb2ee2e76a840d31dd61782a38d5"
     };
 
     async function generateHash(message) {
