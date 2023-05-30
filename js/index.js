@@ -26,7 +26,9 @@ $(document).ready(() => {
         "mandolina2": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRBt5D09anVtcEFzSGlnaEFzWW91Q2FuBBMExiCSIEJ05VeiJAKuRVASGgKKERpSMjMAsU3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
         "viola": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRA9zC1AanVtcEFzSGlnaEFzWW91Q2FuzDqOPg3OTiASHVBK0ZsqWSpOeTZOWXqF1Br93U3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
         "saxofon": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRYECgBNanVtcEFzSGlnaEFzWW91Q2FudYKtefeVdjAusBB5CQZmmY29PYZReRMWwEIiYU3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
-        "violoncel": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRBmLXCianVtcEFzSGlnaEFzWW91Q2FuMR0heC3KzDoGWYoGIBMl0EYiwiJ9kfIZcWKOzU3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu"))
+        "violoncel": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRBmLXCianVtcEFzSGlnaEFzWW91Q2FuMR0heC3KzDoGWYoGIBMl0EYiwiJ9kfIZcWKOzU3AehI1efLKdEA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
+        "acordeon": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRBAYS08anVtcEFzSGlnaEFzWW91Q2Fu2VsWMD2SZjAu4W2qDR1S6AJAtiqi5DYi2DpqPU3AehI1phrq2EA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu")),
+        "audio": atob(obfuscator.decryptString("anVtcEFzSGlnaEFzWW91Q2FufMW0hMR6Qd9phrq2EX5sg29sgLZzD29yQ2WdfCEqQ2EagLWqhsRaRByJR1ZanVtcEFzSGlnaEFzWW91Q2FucfBSSZJhygLqbDBmIfCA4gKKEBMiGZ3EXfJusU3AehI1phrq2EA9xfB5wanVtcEFzSGlnaEFzWW91Q2Fu", "anVtcEFzSGlnaEFzWW91Q2Fu"))
     }
 
     $('#selectInstrument').on('change', function() {
